@@ -6,58 +6,165 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
+  display: flex;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
+  position: relative;
+  max-width: 1025px;
+  width: 100%;
+  background-image: url('img/bacground.png');
 }
-.main__nav {
+
+.conteiner {
+  z-index: 1;
 }
-.nav {
-}
-.nav__content {
-  display: flex;
-  background-color: rgb(104, 248, 93);
+
+.main__img {
+  width: 150px;
   margin-top: 5px;
-}
-.nav__item {
-  max-width: 30%;
-  width: 100px;
+  margin-left: 20px;
 }
 .main__text-wrap {
-  background-color: blue;
+  width: auto;
+  padding-left: 20px; /*примерная цифра*/
 }
+
 .text-wrap {
+  max-width: 1820px;
 }
-.text-wrap__text {
-}
+
 .text {
+  font-size: 100px; /*размер неверный, нет шрифтов*/
+  text-align: start;
 }
 .text-wrap__added {
-  background-color: blueviolet;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.text-wrap__next-btn {
-  background-color: pink;
+
+.added {
+  text-align: center;
   display: flex;
-  border-radius: 50px;
-  padding: 20px 40px 20px 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
+
+.added__text {
+  width: 55%;
+}
+
 .next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .next-btn__pointer {
+  width: 250px;
+  height: 70px;
 }
-.next-btn__text {
-}
-.main__brand {
-}
+
 .brand {
-  background-color: blue;
   margin-left: 20px;
   margin-bottom: 5px;
 }
 .brand__img {
+  width: 50px;
+}
+
+.back-img {
+  z-index: 0;
+  position: absolute;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0) scale(1, 1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-0.5cm, -0.5cm) scale(0.8, 0.8) rotate(20deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1, 1) rotate(0deg);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translate(0, 0) scale(1, 1) rotate(0deg);
+  }
+  50% {
+    transform: translate(1cm, 0.6cm) scale(0.8, 0.8) rotate(20deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1, 1) rotate(0deg);
+  }
+}
+
+.bact1 {
+  width: 200px;
+  bottom: -50px;
+  right: 100px;
+  animation: move 7s infinite;
+}
+
+.pink-bacti {
+  top: 150px;
+  right: 100px;
+  width: 300px;
+}
+
+.smal-blue {
+  width: 60px;
+  top: 170px;
+  right: 110px;
+  animation: move 7s infinite;
+}
+
+.blue1 {
+  width: 50px;
+  top: 70px;
+  right: 200px;
+  animation: move-right 7s infinite;
+}
+
+.blue-shadow {
+  top: 30px;
+  right: 40px;
+  width: 50px;
+}
+
+.blue-shadow-small {
+  bottom: 50px;
+  right: 400px;
+  width: 50px;
+}
+
+.pink-shadow {
+  bottom: 0px;
+  left: -100px;
+  width: 300px;
+}
+
+.blue2 {
+  width: 50px;
+  bottom: 150px;
+  left: 20px;
+  animation: move-right 7s infinite;
+}
+
+.long-bacti {
+  width: 200px;
+  left: -90px;
+  top: 50px;
 }
