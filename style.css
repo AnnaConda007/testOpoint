@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('font/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-light';
+  src: url('font/Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-bold';
+  src: url('font/Gilroy-Bold.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,22 +20,25 @@
 
 html,
 body {
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+  font-family: 'Gilroy-light';
 }
 
 .main {
+  height: 768px;
+  max-width: 1025px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
   display: flex;
   height: 100%;
-  display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   position: relative;
-  max-width: 1025px;
-  width: 100%;
   background-image: url('img/bacground.png');
 }
 
@@ -28,45 +46,69 @@ body {
   z-index: 1;
 }
 
-.main__img {
+.slide__nav {
   width: 150px;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-left: 20px;
 }
-.main__text-wrap {
-  width: auto;
-  padding-left: 20px; /*примерная цифра*/
+
+.slide__text-wrap {
+  padding-left: 50px;
+  max-width: 100%;
 }
 
-.text-wrap {
-  max-width: 1820px;
+@media (max-width: 1024px) {
+  .slide__text-wrap {
+    padding-left: 0px;
+  }
+}
+
+.text-wrap__greetings {
+  font-size: 40px; /*примерный размер!!*/
+  font-family: 'Gilroy-Regular';
 }
 
 .text {
-  font-size: 100px; /*размер неверный, нет шрифтов*/
+  font-size: 140px; /*размер неверный, нет шрифтов*/
   text-align: start;
+  line-height: 80%;
+  font-weight: 50;
 }
-.text-wrap__added {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: calc(16vw - 20px);
+  }
+}
+
+.text--bold {
+  font-family: 'Gilroy-bold';
 }
 
 .added {
-  text-align: center;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .added__text {
-  width: 55%;
+  margin-right: 50px;
 }
 
-.next-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 770px) {
+  .added__text {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .added__pointer-wrap {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
 }
 
 .next-btn__pointer {
@@ -74,11 +116,9 @@ body {
   height: 70px;
 }
 
-.brand {
+.slide__brand {
   margin-left: 20px;
-  margin-bottom: 5px;
-}
-.brand__img {
+  margin-bottom: 20px;
   width: 50px;
 }
 
@@ -119,9 +159,9 @@ body {
 }
 
 .pink-bacti {
-  top: 150px;
+  top: 170px;
   right: 100px;
-  width: 300px;
+  width: 500px;
 }
 
 .smal-blue {
