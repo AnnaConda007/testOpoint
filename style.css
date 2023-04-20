@@ -8,6 +8,11 @@
   src: url('font/Gilroy-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'Gilroy-reg';
+  src: url('font/Gilroy-Regular.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,36 +53,35 @@ body {
 }
 
 .slide__text-wrap {
-  padding-left: 65px;
+  padding-left: 70px;
   max-width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1023px) {
   .slide__text-wrap {
     padding-left: 0px;
   }
 }
 
-.text-wrap__greetings {
+.slide__greetings {
   font-size: 35px;
   font-family: 'Gilroy-light';
 }
 
 .text {
-  margin-bottom: 20px;
-  font-size: 117px;
+  font-size: 115px;
   text-align: start;
   line-height: 100%;
-  font-weight: 50;
   text-transform: uppercase;
 }
 
 @media (max-width: 1023px) {
   .text {
-    font-size: calc(16vw - 20px);
+    font-size: calc(16vw - 30px);
   }
 }
+
 .text--bold {
   font-family: 'Gilroy-bold';
 }
@@ -88,6 +92,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 900px) {
@@ -102,7 +107,6 @@ body {
   width: 290px;
   height: 80px;
   margin-left: 50px;
-  margin-bottom: 35px;
 }
 
 .slide__brand {
@@ -152,6 +156,12 @@ body {
   right: 90px;
   width: 500px;
   z-index: 2;
+}
+
+@media (max-width: 1025px) {
+  .pink-bacti {
+    z-index: 0;
+  }
 }
 
 .smal-blue {
