@@ -21,6 +21,7 @@
 html,
 body {
   font-family: 'Gilroy-light';
+  text-transform: uppercase;
 }
 
 .main {
@@ -53,7 +54,7 @@ body {
 }
 
 .slide__content {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -73,7 +74,6 @@ body {
   font-size: 115px;
   text-align: start;
   line-height: 100%;
-  text-transform: uppercase;
   padding-left: 70px;
 }
 
@@ -225,7 +225,6 @@ body {
   font-family: 'DIN-pro';
   font-size: 30px;
   line-height: 100%;
-  text-transform: uppercase;
   font-weight: 100;
   width: 100%;
   margin-left: 65px;
@@ -280,6 +279,65 @@ body {
 
 .content__text--bold {
   font-weight: bold;
+}
+
+.content__wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.content__slogan {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 66%;
+}
+.slogan__title {
+  width: 100%;
+  font-size: 29px;
+  font-family: 'Gilroy-light';
+}
+.slogan__message {
+  font-size: 95px;
+  letter-spacing: 0.1em;
+}
+
+.message--bold {
+  font-family: 'Gilroy-bold';
+}
+.content__cards {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+
+  height: 260px;
+  width: 100%;
+}
+.content__basic-card {
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 410px;
+  margin-right: 20px;
+}
+.content__card-wrap {
+  width: 340px;
+  height: 250px;
+  margin-left: 30px;
+}
+.content__added-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 265px;
+  border-radius: 30px;
+  height: 150px;
+  margin-left: 15px;
+}
+.content__btn {
+  width: 260px;
+  margin-top: 30px;
 }
 
 .first-slide,
