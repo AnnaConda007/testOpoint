@@ -258,11 +258,13 @@ body {
   justify-content: center;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 10px;
+  height: 430px;
 }
 
 .scrol__line {
   position: relative;
-  height: 430px;
+  height: 100%;
 }
 
 .scrol__thumb {
@@ -502,8 +504,7 @@ body {
     display: none;
   }
 }
-
-.second-slide,
+.first-slide,
 .third-slide {
   display: none;
 }
