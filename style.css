@@ -248,21 +248,20 @@ body {
 }
 
 .content__text-wrap {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(255, 255, 255);
   height: 450px;
   max-width: 750px;
-  width: 70%;
+  width: 80%;
   overflow-y: scroll;
   text-align: left;
   direction: rtl;
   border-radius: 50px;
   margin-top: 10px;
-  padding-right: 60px;
+  margin-right: 100px;
   padding-left: 20px;
 }
 
 .scrol {
-  margin-right: 30px;
   width: 60px;
   display: flex;
   justify-content: center;
@@ -288,11 +287,11 @@ body {
 }
 
 .content__text {
-  width: 100%;
-  font-size: 22px;
+  width: 90%;
+  font-size: 17px;
   line-height: 2.5rem;
   padding-top: 20px;
-  padding-bottom: 20px;
+  margin-right: 60px;
 }
 
 .content__text--bold {
@@ -477,6 +476,7 @@ body {
   margin-top: 60px;
   height: 260px;
   width: 100%;
+  font-size: 17px;
   font-family: 'DIN-pro-light';
   text-transform: none;
   line-height: 2em;
