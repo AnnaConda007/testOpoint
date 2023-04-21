@@ -259,6 +259,7 @@ body {
   margin-top: 10px;
   margin-right: 100px;
   padding-left: 20px;
+  color: rgb(100, 83, 83);
 }
 
 .scrol {
@@ -486,6 +487,7 @@ body {
   font-family: 'DIN-pro-light';
   text-transform: none;
   line-height: 2em;
+  color: rgb(100, 83, 83);
 }
 
 .content__basic-card {
@@ -601,7 +603,8 @@ body {
     display: none;
   }
 }
-.first-slide,
+
+.second-slide,
 .third-slide {
   display: none;
 }
