@@ -68,6 +68,12 @@ body {
   }
 }
 
+.nav__img {
+  width: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .slide__greetings {
   font-size: 35px;
   font-family: 'Gilroy-light';
@@ -131,9 +137,11 @@ body {
   0% {
     transform: translate(0, 0) scale(1, 1) rotate(0deg);
   }
+
   50% {
     transform: translate(-0.5cm, -0.5cm) scale(0.8, 0.8) rotate(20deg);
   }
+
   100% {
     transform: translate(0, 0) scale(1, 1) rotate(0deg);
   }
@@ -143,9 +151,11 @@ body {
   0% {
     transform: translate(0, 0) scale(1, 1) rotate(0deg);
   }
+
   50% {
     transform: translate(1cm, 0.6cm) scale(0.8, 0.8) rotate(20deg);
   }
+
   100% {
     transform: translate(0, 0) scale(1, 1) rotate(0deg);
   }
@@ -296,6 +306,78 @@ body {
   justify-content: flex-end;
 }
 
+.content--modal {
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.content__wrap--modal {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.content__cards--modal {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+  height: 260px;
+  width: 100%;
+  font-family: 'DIN-pro-light';
+  text-transform: none;
+  line-height: 2em;
+}
+
+.content__modal {
+  display: flex;
+  justify-content: center;
+  height: 260px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.slider-list {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slider-list__item {
+  list-style: none;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.slider-list__num {
+  font-size: 18px;
+  list-style: none;
+  color: #99ccff;
+  font-weight: bold;
+  font-family: 'Gilroy-bold';
+  margin-top: 20px;
+}
+
+.content__nav {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.nav__wrap {
+  width: 10%;
+  margin-right: 255px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .content__slogan {
   margin-top: 40px;
   display: flex;
@@ -303,11 +385,13 @@ body {
   justify-content: flex-start;
   width: 66%;
 }
+
 .slogan__title {
   width: 100%;
   font-size: 29px;
   font-family: 'Gilroy-light';
 }
+
 .slogan__message {
   font-size: 95px;
   letter-spacing: 0.1em;
@@ -331,10 +415,12 @@ body {
     bottom: var(--start-bottom);
     left: var(--start-left);
   }
+
   50% {
     bottom: calc(var(--start-bottom) + 1cm);
     left: calc(var(--start-left) - 2cm);
   }
+
   100% {
     bottom: var(--start-bottom);
     left: var(--start-left);
@@ -395,6 +481,7 @@ body {
   text-transform: none;
   line-height: 2em;
 }
+
 .content__basic-card {
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
@@ -405,7 +492,7 @@ body {
   justify-content: center;
 }
 
-.basic-card-text {
+.basic-card__text {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -416,7 +503,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .basic-card-text {
+  .basic-card__text {
     padding: 20px;
   }
 }
@@ -449,6 +536,7 @@ body {
   width: 340px;
   height: 250px;
 }
+
 .content__added-card {
   background-color: rgb(255, 255, 255);
 
@@ -461,6 +549,7 @@ body {
   align-items: flex-end;
   justify-content: center;
 }
+
 .content__btn {
   width: 260px;
   margin-top: 30px;
@@ -486,6 +575,7 @@ body {
   width: 70px;
   animation: move 4s infinite;
 }
+
 .smal-bowl {
   left: 10px;
   bottom: 310px;
@@ -499,12 +589,14 @@ body {
   height: 700px;
   z-index: 0;
 }
+
 @media (max-width: 1000px) {
   .bottle {
     display: none;
   }
 }
-.first-slide,
+
+.second-slide,
 .third-slide {
   display: none;
 }
