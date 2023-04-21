@@ -12,30 +12,27 @@ const slider = () => {
             count = slides.length - 1;
         }
     }
+    const swipe = (math = "true") => {
+        count = (math === "plus") ? count + 1 : count - 1
+        checkCount()
+        checkCount()
+        slides.forEach(slide => {
+            slide.style.display = "none"
+        })
+        slides[count].style.display = "flex"
+    }
+
 
     slider.addEventListener("touchstart", (e) => {
         startX = e.touches[0].clientX;
     });
-
     slider.addEventListener("touchend", (e) => {
         endX = e.changedTouches[0].clientX;
         const xDirection = endX - startX;
         if (xDirection > 0 && xDirection > swipeThreshold) {
-            console.log("до" + count)
-            console.log("вправо")
-            count = count - 1
-            checkCount()
-            slides.forEach(slide => {
-                slide.style.display = "none"
-            })
-            slides[count].style.display = "flex"
+            swipe("minus")
         } else if (xDirection < 0 && Math.abs(xDirection) > swipeThreshold) {
-            count++
-            checkCount()
-            slides.forEach(slide => {
-                slide.style.display = "none"
-            })
-            slides[count].style.display = "flex"
+            swipe("plus")
         }
     });
 };
