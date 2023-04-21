@@ -421,7 +421,6 @@ body {
   animation: move-right 4s infinite;
 }
 
-.first-slide,
 .second-slide,
 .third-slide {
   display: none;
