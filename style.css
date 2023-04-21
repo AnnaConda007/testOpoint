@@ -422,7 +422,8 @@ body {
 }
 
 .first-slide,
-.second-slide {
+.second-slide,
+.third-slide {
   display: none;
 }
 
