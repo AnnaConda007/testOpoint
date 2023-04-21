@@ -15,11 +15,11 @@ const slider = () => {
     const swipe = (math = "true") => {
         count = (math === "plus") ? count + 1 : count - 1
         checkCount()
-        checkCount()
         slides.forEach(slide => {
             slide.style.display = "none"
         })
         slides[count].style.display = "flex"
+
     }
 
 
