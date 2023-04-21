@@ -251,8 +251,9 @@ body {
   padding-left: 20px;
 }
 
-.content__text-wrap__scrol {
-  margin-right: 20px;
+.scrol {
+  margin-right: 30px;
+  width: 60px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -260,15 +261,14 @@ body {
 }
 
 .scrol__line {
-  position: absolute;
+  position: relative;
   height: 430px;
-  z-index: 0;
 }
 
 .scrol__thumb {
   width: 20px;
   height: 100px;
-  z-index: 1;
+  position: absolute;
 }
 
 .content__text-wrap::-webkit-scrollbar {
