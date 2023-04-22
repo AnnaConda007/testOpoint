@@ -19,9 +19,7 @@ const slider = () => {
             slide.style.display = "none"
         })
         slides[count].style.display = "flex"
-
     }
-
 
     slider.addEventListener("touchstart", (e) => {
         startX = e.touches[0].clientX;

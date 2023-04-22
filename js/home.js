@@ -6,6 +6,7 @@ const home = () => {
                 slide.style.display = "none"
             })
         }
+        /* slides[0].style.display = "flex";*/
     })
 }
 

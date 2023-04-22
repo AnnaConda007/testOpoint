@@ -7,7 +7,6 @@ const render = () => {
     trigger.addEventListener("click", () => {
         modal.style.display = "flex"
         hidden.style.display = "none"
-
     })
     modal.addEventListener("click", (e) => {
         if (!e.target.closest('.content__modal')) {
@@ -15,14 +14,11 @@ const render = () => {
             modal.style.display = "none"
             hidden.style.display = "flex"
         }
-
     })
-
     const backBtn = document.querySelector(".nav-left")
     const nextBtn = document.querySelector(".nav-right")
     const allImg = document.querySelectorAll(".slider-list")
     let count = 0
-
     const checkCount = () => {
         count = (count > allImg.length - 1) ? 0 : count;
         count = (count < 0) ? allImg.length - 1 : count;
@@ -45,9 +41,6 @@ const render = () => {
         checkCount();
         allImg[count].style.display = "block"
     })
-
-
-
 }
 
 export default render
