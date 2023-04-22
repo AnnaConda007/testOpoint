@@ -170,14 +170,14 @@ body {
   }
 }
 
-.bact1 {
+.animated1-slide1 {
   width: 230px;
   bottom: -90px;
   right: 250px;
   animation: move 7s infinite;
 }
 
-.pink-bacti {
+.animated2-slide1 {
   top: 170px;
   right: 60px;
   width: 500px;
@@ -185,51 +185,51 @@ body {
 }
 
 @media (max-width: 1023px) {
-  .pink-bacti {
+  .animated2-slide1 {
     z-index: 0;
   }
 }
 
-.smal-blue {
+.animated3-slide1 {
   width: 110px;
   top: 200px;
   right: 50px;
   animation: move 7s infinite;
 }
 
-.blue1 {
+.animated4-slide1 {
   width: 60px;
   top: 60px;
   right: 210px;
   animation: move-right 7s infinite;
 }
 
-.blue-shadow {
+.animated5-slide1 {
   top: 30px;
   right: 40px;
   width: 50px;
 }
 
-.blue-shadow-small {
+.animated5-slide1-small {
   bottom: 50px;
   right: 400px;
   width: 50px;
 }
 
-.pink-shadow {
+.animated6-slide1 {
   bottom: 0px;
   left: -100px;
   width: 300px;
 }
 
-.blue2 {
+.animated6-slide1 {
   width: 80px;
   bottom: 190px;
   left: 20px;
   animation: move-right 7s infinite;
 }
 
-.long-bacti {
+.animated7-slide1 {
   width: 200px;
   left: -80px;
   top: 80px;
@@ -460,7 +460,7 @@ body {
   }
 }
 
-.pink-bact1 {
+.animated1-slide2 {
   --start-bottom: var(--start-bottom-bact1);
   --start-left: var(--start-left-bact1);
   width: 700px;
@@ -468,7 +468,7 @@ body {
   animation: move-bact 5s infinite;
 }
 
-.pink-bact2 {
+.animated2-slide2 {
   --start-bottom: var(--start-bottom-bact2);
   --start-left: var(--start-left-bact2);
   width: 400px;
@@ -476,7 +476,7 @@ body {
   animation: move-bact 5s infinite;
 }
 
-.pink-bact3 {
+.animated3-slide2 {
   --start-bottom: var(--start-bottom-bact3);
   --start-left: var(--start-left-bact3);
   width: 200px;
@@ -484,7 +484,7 @@ body {
   animation: move-bact 5s infinite;
 }
 
-.pink-bact4 {
+.animated4-slide2 {
   width: 400px;
   transform: rotate(40deg);
   --start-bottom: var(--start-bottom-bact4);
@@ -492,7 +492,7 @@ body {
   animation: move-bact 5s infinite;
 }
 
-.pink-bact5 {
+.animated5-slide2 {
   width: 250px;
   transform: rotate(40deg);
   --start-bottom: var(--start-bottom-bact5);
@@ -591,28 +591,28 @@ body {
   margin-top: 30px;
 }
 
-.blue-bowl {
+.animated1-slide3 {
   left: 80px;
   bottom: -50px;
   width: 190px;
   animation: move-right 6s infinite;
 }
 
-.pinc-bowl {
+.animated2-slide3 {
   left: 25px;
   bottom: 140px;
   width: 70px;
   animation: move 7s infinite;
 }
 
-.transp-bowl {
+.animated4-slide3 {
   left: 180px;
   top: 150px;
   width: 70px;
   animation: move 4s infinite;
 }
 
-.smal-bowl {
+.animated3-slide3 {
   left: 10px;
   bottom: 310px;
   width: 30px;
