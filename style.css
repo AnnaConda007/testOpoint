@@ -47,6 +47,15 @@ body {
   overflow: hidden;
 }
 
+.second-slide {
+  background-position: 60% 60%;
+}
+
+.third-slide {
+  background-position: 100%;
+  background-size: cover;
+}
+
 .conteiner {
   z-index: 2;
 }
@@ -478,7 +487,6 @@ body {
 .pink-bact4 {
   width: 400px;
   transform: rotate(40deg);
-  z-index: 8;
   --start-bottom: var(--start-bottom-bact4);
   --start-left: var(--start-left-bact4);
   animation: move-bact 5s infinite;
@@ -487,7 +495,6 @@ body {
 .pink-bact5 {
   width: 250px;
   transform: rotate(40deg);
-  z-index: 2;
   --start-bottom: var(--start-bottom-bact5);
   --start-left: var(--start-left-bact5);
   animation: move-bact 5s infinite;
@@ -519,6 +526,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-shadow: 0 0 60px 60px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 850px) {
@@ -529,10 +537,11 @@ body {
 
 .basic-card__text {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   height: 80%;
   width: 100%;
+  padding-left: 150px;
 }
 
 .added-card__card-text {
@@ -566,7 +575,6 @@ body {
 
 .content__added-card {
   background-color: rgb(255, 255, 255);
-
   border-radius: 15px;
   width: 265px;
   border-radius: 30px;
@@ -575,6 +583,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
+  box-shadow: 0 0 60px 60px rgba(0, 0, 0, 0.1);
 }
 
 .content__btn {

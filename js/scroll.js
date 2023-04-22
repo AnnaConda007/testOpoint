@@ -5,7 +5,6 @@ const scrol = () => {
 
     wrap.addEventListener("scroll", () => {
         const scroll = wrap.scrollTop;
-        console.log(scroll)
         scrolThumb.style.top = `${scroll}px`
     });
 
