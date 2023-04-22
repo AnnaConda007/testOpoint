@@ -27,6 +27,7 @@ const slider = () => {
         startX = e.touches[0].clientX;
     });
     slider.addEventListener("touchend", (e) => {
+
         endX = e.changedTouches[0].clientX;
         const xDirection = endX - startX;
         if (xDirection > 0 && xDirection > swipeThreshold) {

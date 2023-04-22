@@ -262,6 +262,14 @@ body {
   color: rgb(100, 83, 83);
 }
 
+@media (max-width: 850px) {
+  .content__text-wrap {
+    width: 90%;
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
+
 .scrol {
   width: 60px;
   display: flex;
@@ -272,6 +280,11 @@ body {
   height: 430px;
 }
 
+@media (max-width: 900px) {
+  .scrol {
+    width: 10%;
+  }
+}
 .scrol__line {
   position: relative;
   height: 100%;
@@ -382,17 +395,24 @@ body {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 66%;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .content__slogan {
+    justify-content: flex-start;
+  }
 }
 
 .slogan__title {
-  width: 100%;
+  width: 51%;
   font-size: 29px;
   font-family: 'Gilroy-light';
 }
 
 .slogan__message {
+  width: 51%;
   font-size: 95px;
   letter-spacing: 0.1em;
 }
@@ -493,11 +513,18 @@ body {
 .content__basic-card {
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
-  width: 410px;
+  width: 100%;
+  max-width: 450px;
   margin-right: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .content__basic-card {
+    margin-right: 10px;
+  }
 }
 
 .basic-card__text {
@@ -506,14 +533,6 @@ body {
   justify-content: flex-end;
   height: 80%;
   width: 100%;
-  padding-left: 130px;
-  padding-right: 10px;
-}
-
-@media (max-width: 1000px) {
-  .basic-card__text {
-    padding: 20px;
-  }
 }
 
 .added-card__card-text {
