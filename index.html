@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Тестовое задание</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main class="main">
-        <div class="main__slide slide first-slide">
-            <a href=""><img class="slide__nav" src="img/title-top.png" alt="к первому слайду"></a>
+        <div class="main__slide slide first-slide" id="home">
+            <img class="slide__nav" src="img/title-top.png" alt="к первому слайду">
             <div class="slide__content content conteiner ">
                 <h2 class="slide__greetings">
                     привет,
                 </h2>
-                <h2 class="content__subtitle  subtitle  ">это <span class="subtitle  subtitle --bold">не</span>
+                <h2 class="content__subtitle  subtitle">это<span class="subtitle subtitle--bold">не</span>
                     коммерческое</h2>
                 <div class="content__added added">
                     <h2 class="added__subtitle  subtitle ">
                         задание
                     </h2>
                     <div class="added__pointer-wrap">
-                        <a href=""><img class="next-btn__pointer" src="img/btn.png" alt="далее"></a>
+                        <img class="next-btn__pointer" src="img/btn.png" alt="далее">
                     </div>
-
                 </div>
             </div>
             <img class="slide__brand" src="img/title-bottom.png" alt="название компании">
@@ -42,7 +41,7 @@
         </div>
 
         <div class="main__slide slide second-slide">
-            <a href=""><img class="slide__nav" src="img/title-top.png" alt="к первому слайду"></a>
+            <a href="#home"><img class="slide__nav" src="img/title-top.png" alt="к первому слайду"></a>
             <div class="slide__content content conteiner center ">
                 <h2 class="content__title">Текст <br> сообщения</h2>
                 <div class="content__text-wrap__scrol scrol">
@@ -75,10 +74,15 @@
                 </div>
             </div>
             <img class="slide__brand" src="img/title-bottom.png" alt="название компании">
+            <img class="pink-bact1 hidden back-img" src="img/pink-bacti.png" alt="бактерия">
+            <img class="pink-bact2 hidden back-img" src="img/pink-bacti.png" alt="бактерия">
+            <img class="pink-bact3 hidden back-img" src="img/pink-bacti.png" alt="бактерия">
+            <img class="pink-bact4 hidden back-img" src="img/pink-bacti.png" alt="бактерия">
+            <img class="pink-bact5 hidden back-img" src="img/pink-bacti.png" alt="бактерия">
         </div>
 
         <div class="main__slide slide third-slide">
-            <a href=""><img class="slide__nav" src="img/title-top.png" alt="к первому слайду"></a>
+            <a href="#home"><img class="slide__nav" src="img/title-top.png" alt="к первому слайду"></a>
             <div class="slide__content content ">
                 <div class="content__wrap">
                     <div class="content__slogan slogan">
@@ -88,7 +92,7 @@
                     <div class="content__cards">
                         <div class="content__basic-card basic-card">
                             <img class="basic-card__img" src="img/plate.png" alt="значок тарелки">
-                            <h2 class="basic-card-text">
+                            <h2 class="basic-card__text">
                                 Ehicula ipsum a arcu
                                 cursus vitae. Eu non
                                 diam phasellus <br>
@@ -104,23 +108,66 @@
                                     cursus vitae
                                 </h2>
                             </div>
-                            <img class="content__btn" src="img/more-btn.png" alt="">
-                            <img class="blue-bowl back-img" src="img/blue-bowl.png " alt="мыльный пузырь">
-                            <img class="pinc-bowl back-img" src="img/pink-bowl.png " alt="мыльный пузырь">
-                            <img class="smal-bowl back-img" src="img/blue-bowl.png " alt="мыльный пузырь">
-                            <img class="transp-bowl back-img" src="img/transparent-bowl.png " alt="мыльный пузырь">
-                            <img class="bottle back-img" src="img/bottle.png " alt="спрей">
-
+                            <img class="content__btn" src="img/more-btn.png" alt="далее">
                         </div>
                     </div>
+                </div>
+                <div class="slide__content content content--modal">
+                    <div class="content__wrap--modal">
+                        <div class="content__slogan slogan">
+                            <h2 class="slogan__title">преимущества</h2>
+                            <h2 class="slogan__message">BREND<span class="message--bold">XY</span></h2>
+                        </div>
+                        <div class="content__cards--modal">
+                            <div class="content__modal">
+                                <ul class="content__slider-list slider-list active">
+                                    <li class="slider-list__num">01</li>
+                                    <li class="slider-list__item">Lorem ipsum dolor sit amet, consectetur <br>
+                                        adipiscing elit</li>
+                                    <li class="slider-list__num">02</li>
+                                    <li class="slider-list__item">Faucibus pulvinar elementum integer enim</li>
+                                    <li class="slider-list__num">03</li>
+                                    <li class="slider-list__item">Faucibus pulvinar elementum integer enim</li>
+                                </ul>
+                                <ul class="content__slider-list slider-list">
+                                    <li class="slider-list__num">04</li>
+                                    <li class="slider-list__item">Mi bibendum neque egestas congue quisque <br>
+                                        egestas diam</li>
+                                    <li class="slider-list__num">05</li>
+                                    <li class="slider-list__item">Venenatis lectus magna fringilla urna</li>
+                                    <li class="slider-list__num">06</li>
+                                    <li class="slider-list__item">Venenatis lectus magna fringilla urna</li>
+                                </ul>
+                                <ul class="content__slider-list slider-list">
+                                    <li class="slider-list__num">07</li>
+                                    <li class="slider-list__item">Lorem ipsum dolor sit amet, consectetur <br>
+                                        adipiscing elit</li>
+                                    <li class="slider-list__num">08</li>
+                                    <li class="slider-list__item">Faucibus pulvinar elementum integer enim</li>
+                                    <li class="slider-list__num">09</li>
+                                    <li class="slider-list__item">Faucibus pulvinar elementum integer enim</li>
+                                </ul>
+                                <div class="content__nav">
+                                    <div class="nav__wrap">
+                                        <img class="nav-left nav__img" src="img/left.png" alt="назад">
+                                        <img class="nav-right nav__img" src="img/right.png" alt="назад">
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <img class="slide__brand" src="img/title-bottom.png" alt="название компании">
-
+            <img class="blue-bowl back-img" src="img/blue-bowl.png " alt="мыльный пузырь">
+            <img class="pinc-bowl back-img" src="img/pink-bowl.png " alt="мыльный пузырь">
+            <img class="smal-bowl back-img" src="img/blue-bowl.png " alt="мыльный пузырь">
+            <img class="transp-bowl back-img" src="img/transparent-bowl.png " alt="мыльный пузырь">
+            <img class="bottle back-img" src="img/bottle.png " alt="спрей">
         </div>
     </main>
-
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
