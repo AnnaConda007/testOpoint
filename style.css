@@ -487,7 +487,6 @@ body {
 .pink-bact4 {
   width: 400px;
   transform: rotate(40deg);
-  z-index: 8;
   --start-bottom: var(--start-bottom-bact4);
   --start-left: var(--start-left-bact4);
   animation: move-bact 5s infinite;
@@ -496,7 +495,6 @@ body {
 .pink-bact5 {
   width: 250px;
   transform: rotate(40deg);
-  z-index: 2;
   --start-bottom: var(--start-bottom-bact5);
   --start-left: var(--start-left-bact5);
   animation: move-bact 5s infinite;
