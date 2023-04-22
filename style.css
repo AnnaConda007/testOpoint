@@ -541,9 +541,13 @@ body {
   align-items: center;
   height: 80%;
   width: 100%;
-  padding-left: 150px;
 }
 
+@media (min-width: 850px) {
+  .basic-card__text {
+    padding-left: 150px;
+  }
+}
 .added-card__card-text {
   display: flex;
   align-items: center;
