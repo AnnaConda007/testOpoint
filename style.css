@@ -47,6 +47,15 @@ body {
   overflow: hidden;
 }
 
+.second-slide {
+  background-position: 60% 60%;
+}
+
+.third-slide {
+  background-position: 100%;
+  background-size: cover;
+}
+
 .conteiner {
   z-index: 2;
 }
@@ -529,10 +538,11 @@ body {
 
 .basic-card__text {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   height: 80%;
   width: 100%;
+  padding-left: 150px;
 }
 
 .added-card__card-text {
